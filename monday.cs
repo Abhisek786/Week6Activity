@@ -11,13 +11,14 @@ namespace htel
         static void Main(string[] args)
         {
             // Title of the program
-            Console.WriteLine("\t\t\tWelcome to sydney hotel");
+            Console.WriteLine("\t\t\tWelcome to the sydney hotel");
             int i = 0;
             string[] name = new string[20];
             int[] night = new int[20];
             string[] roomservice = new string[20];
             double[] costlist = new double[20];
 
+            //loop to repeat the step
             while (true)
             {
                 //taking user inputs
