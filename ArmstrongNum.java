@@ -9,16 +9,20 @@ public class ArmstrongNum {
         int sum = 0;
         System.out.print("Enter a number:- ");
         String arm = sc.next();
-        int arm0 = Integer.parseInt(arm); // Converting string to integer
+        // Converting string to integer
+        int arm0 = Integer.parseInt(arm);
 
-        fun(num, sum, arm, arm0); // Calling the function
+        // Calling the function
+        fun(num, sum, arm, arm0);
     }
-    public static void fun(int num, int sum, String arm, int arm0){
-        for (int i =0; i<arm.length(); i++) {
-            num = arm.charAt(i)-48;
-            num = num*num*num;
+
+    public static void fun(int num, int sum, String arm, int arm0) {
+        for (int i = 0; i < arm.length(); i++) {
+            num = arm.charAt(i) - 48;
+            num = num * num * num;
             sum = sum + num;
         }
+
         // Checking the condition
         if (sum == arm0)
             System.out.println("Yes, the given number is Armstrong");
